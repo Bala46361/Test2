@@ -99,7 +99,7 @@ mvn package
 
 It produces the `DevelopmentBooks-1.0.0-SNAPSHOT.jar` file in the `/target` directory.
 
-The application is now runnable using `java -jar target/kata-dev-books-0.0.1-SNAPSHOT.jar`.
+The application is now runnable using `java -jar target/DevelopmentBooks-1.0.0-SNAPSHOT.jar`.
 ```
 
 
