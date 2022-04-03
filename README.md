@@ -2,10 +2,12 @@
 
 
 # Purpose
+```
 This Development books kata is developed using Test Driven Development approach using spring boot and written in Java programming language.
+```
 
 # About this Kata and its discount calculation logic
-
+```
 There is a series of books about software development that have been read by a lot of developers who want to improve their development skills. Let’s say an editor, in a gesture of immense generosity to mankind (and to increase sales as well), is willing to set up a pricing model where you can get discounts when you buy these books. The available books are :
 
 Clean Code (Robert Martin, 2008)
@@ -41,11 +43,10 @@ Answer :
 = 160 EUR + 160 EUR
 
 = 320 EUR (knowledge is priceless but has a cost)
-
-
+```
 # Getting Started
 
-1.	`git clone https://github.com/2022-DEV1-018/DevelopmentBooks.git `
+`git clone https://github.com/2022-DEV1-018/DevelopmentBooks.git `
 
 # Prerequisites
 ```
