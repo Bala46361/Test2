@@ -60,7 +60,7 @@ Eclipse - Any IDE which supports Java
 # Build and Test
 
 ## Running the application
-
+```
 You can run the application using:
 
 mvn clean install
@@ -68,7 +68,7 @@ mvn spring-boot:run
 ```
 
 ## Testing the application
-
+```
 Once the application runs, we can test it using postman or the tool of your choice as per the below guidelines.
 
 getAllBooks() Service - This is a GET Service will return all the available books which can be purchased
@@ -83,14 +83,14 @@ calculateTotalBooksPrice() Service - This is POST Service where we can send our 
 
 The sample request for this calculateTotalPrice is available under  `exampleRequests/validRequest.json`, at the root of the project.
 
-
+```
 ## Packaging the application
-
+```
 The application can be packaged using:
-```
+
 mvn package
-```
 
 It produces the `kata-dev-books-0.0.1-SNAPSHOT.jar` file in the `/target` directory.
 
 The application is now runnable using `java -jar target/kata-dev-books-0.0.1-SNAPSHOT.jar`.
+```
