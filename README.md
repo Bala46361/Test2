@@ -54,7 +54,7 @@ To run this program below softwares needs to be installed
 Java - Version 1.8 or above
 JRE compliance - 1.8 or above
 Maven - 3.2 or above
-JUnit - Version 4.12 (added dependency in pom.xml)
+JUnit - Version 4.13.2 (added dependency in pom.xml)
 Eclipse - Any IDE which supports Java
 
 # Build and Test
@@ -71,16 +71,20 @@ mvn spring-boot:run
 ```
 Once the application runs, we can test it using postman or the tool of your choice as per the below guidelines.
 
-getAllBooks() Service - This is a GET Service will return all the available books which can be purchased
+getBooks() Service - This is a GET Service will return all the available books which can be purchased
+
 	HttpMethod : GET
 	MediaType : JSON
-	EndPoint : http://localhost:8080/books/getAllBooks
+	EndPoint : http://localhost:8080/books/getBooks
 
-calculateTotalBooksPrice() Service - This is POST Service where we can send our book request details 
-and the response will be received with the total price and discounted price details for our purchase request
+calculateBookPrice() Service - 
+	This is POST Service where we can send our book request details 
+	and the response will be received with the total price and 
+	discounted price details for our purchase request
+	
 	HttpMethod : POST
 	MediaType : JSON
-	EndPoint : http://localhost:8080/books/calculateTotalPrice
+	EndPoint : http://localhost:8080/books/calculateBookPrice
 
 The sample request for this calculateTotalPrice is available under
  `exampleRequests/validRequest.json`, at the root of the project.
@@ -92,7 +96,20 @@ The application can be packaged using:
 
 mvn package
 
-It produces the `kata-dev-books-0.0.1-SNAPSHOT.jar` file in the `/target` directory.
+It produces the `DevelopmentBooks-1.0.0-SNAPSHOT.jar` file in the `/target` directory.
 
 The application is now runnable using `java -jar target/kata-dev-books-0.0.1-SNAPSHOT.jar`.
+```
+
+
+# How to access the code coverage report
+```
+Jacoco code coverage report can be accessed by the following steps.
+
+Download project as zip file and unzip the same to a folder. 
+Open a command prompt and goto the project(extracted) folder and execute below commands:
+mvn clean
+mvn install
+After completion of above steps, the report will be available in below path
+<PROJECT_ROOT_FOLDER>\target\site\jacoco\index.html
 ```
