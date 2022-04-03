@@ -75,13 +75,12 @@ getAllBooks() Service - This is a GET Service will return all the available book
 	HttpMethod : GET
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/getAllBooks
-```
+
 calculateTotalBooksPrice() Service - This is POST Service where we can send our purchase order details and the response will be received with the total price and discounted price details for our purchase
 	HttpMethod : POST
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/calculateTotalPrice
 
-```
 The sample request for this calculateTotalPrice is available under  `exampleRequests/validRequest.json`, at the root of the project.
 
 
