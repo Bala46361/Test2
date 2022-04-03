@@ -2,12 +2,12 @@
 
 
 # Purpose
-```
+
 This Development books kata is developed using Test Driven Development approach using spring boot and written in Java programming language.
-```
+
 
 # About this Kata and its discount calculation logic
-```
+
 There is a series of books about software development that have been read by a lot of developers who want to improve their development skills. Let’s say an editor, in a gesture of immense generosity to mankind (and to increase sales as well), is willing to set up a pricing model where you can get discounts when you buy these books. The available books are :
 
 Clean Code (Robert Martin, 2008)
@@ -27,6 +27,7 @@ If you go for the whole hog, and buy all 5, you get a huge 25% discount.
 Note that if you buy, say, 4 books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the 4th book still costs 50 EUR.
 Developers seeking to deliver quality products are queueing up with shopping baskets overflowing with these books. Your mission is to write a piece of code to calculate the price of any conceivable shopping basket.
 
+```
 For example, how much does this basket of books cost?
 
 2 copies of the “Clean Code” book
@@ -72,22 +73,22 @@ mvn spring-boot:run
 ```
 Once the application runs, we can test it using postman or the tool of your choice as per the below guidelines.
 
-getBooks() Service - 
+1) getBooks() Service - 
 	This is a GET Service will return all the available books which can be purchased
-```
+
 	HttpMethod : GET
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/getBooks
-```
-calculateBookPrice() Service - 
+
+2) calculateBookPrice() Service - 
 	This is POST Service where we can send our book request details and the response will be received with the total price and discounted price details for our purchase request
-```
+
 	HttpMethod : POST
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/calculateBookPrice
-```
+
 The sample request for this calculateTotalPrice is available under
- `exampleRequests/validRequest.json`, at the root of the project.
+ `test/resources/CalculateTotalPrice.json`, at the root of the project.
 
 ```
 ## Packaging the application
