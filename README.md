@@ -53,7 +53,7 @@ To run this program below softwares needs to be installed
 
 Java - Version 1.8 or above
 JRE compliance - 1.8 or above
-Maven - For Dependency management
+Maven - 3.2 or above
 JUnit - Version 4.12 (added dependency in pom.xml)
 Eclipse - Any IDE which supports Java
 
@@ -76,12 +76,14 @@ getAllBooks() Service - This is a GET Service will return all the available book
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/getAllBooks
 
-calculateTotalBooksPrice() Service - This is POST Service where we can send our purchase order details and the response will be received with the total price and discounted price details for our purchase
+calculateTotalBooksPrice() Service - This is POST Service where we can send our book request details 
+and the response will be received with the total price and discounted price details for our purchase request
 	HttpMethod : POST
 	MediaType : JSON
 	EndPoint : http://localhost:8080/books/calculateTotalPrice
 
-The sample request for this calculateTotalPrice is available under  `exampleRequests/validRequest.json`, at the root of the project.
+The sample request for this calculateTotalPrice is available under
+ `exampleRequests/validRequest.json`, at the root of the project.
 
 ```
 ## Packaging the application
