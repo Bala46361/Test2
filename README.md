@@ -63,7 +63,7 @@ Eclipse - Any IDE which supports Java
 
 You can run the application using:
 
-mvn clean install```
+mvn clean install
 mvn spring-boot:run
 ```
 
