@@ -48,7 +48,7 @@ Answer :
 1.	`git clone https://github.com/2022-DEV1-018/DevelopmentBooks.git `
 
 # Prerequisites
-
+```
 To run this program below softwares needs to be installed
 
 Java - Version 1.8 or above
@@ -56,7 +56,7 @@ JRE compliance - 1.8 or above
 Maven - 3.2 or above
 JUnit - Version 4.13.2 (added dependency in pom.xml)
 Eclipse - Any IDE which supports Java
-
+```
 # Build and Test
 
 ## Running the application
@@ -71,7 +71,8 @@ mvn spring-boot:run
 ```
 Once the application runs, we can test it using postman or the tool of your choice as per the below guidelines.
 
-getBooks() Service - This is a GET Service will return all the available books which can be purchased
+getBooks() Service - 
+	This is a GET Service will return all the available books which can be purchased
 
 	HttpMethod : GET
 	MediaType : JSON
